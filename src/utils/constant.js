@@ -12,5 +12,11 @@ export const API_OPTIONS= {
     }
   };
   
-  export const API_URL="https://api.themoviedb.org/3/movie/now_playing?api_key=28534d3d2a70b86f7c1886ab93f9fd0d"
   export const VIDEOS_API_KEY="450287a028cce5adb168cc994b629c08";
+  // export const Nowplaying_API_URL="https://api.themoviedb.org/3/movie/now_playing?api_key=28534d3d2a70b86f7c1886ab93f9fd0d"
+  export const Nowplaying_API_URL="https://api.themoviedb.org/3/movie/now_playing?api_key="+VIDEOS_API_KEY;
+
+  export const POSTER_IMG_URL="https://image.tmdb.org/t/p/w500/";
+  export const POPULAR_API_URL="https://api.themoviedb.org/3/movie/popular?api_key="+VIDEOS_API_KEY;
+  export const TopRated_API_URL="https://api.themoviedb.org/3/movie/top_rated?api_key="+VIDEOS_API_KEY;
+  export const UpComing_API_URL="https://api.themoviedb.org/3/movie/upcoming?api_key="+VIDEOS_API_KEY;
