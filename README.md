@@ -14,6 +14,8 @@ Features:
         -title & description
         -Movie suggestions
             -Movies List
+        
+    
 -Netflix Gpt
     -Search bar
     -Movie sugggestions

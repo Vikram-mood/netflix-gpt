@@ -1,6 +1,6 @@
 import React, { useRef, useState } from 'react'
 import Header from './Header';
-import { BACKGROUND_IMG } from '../utils/constant';
+import { BACKGROUND_IMG, PHOTO_URL } from '../utils/constant';
 import { checkValidData, checkValidDat } from '../utils/validate';
 import { createUserWithEmailAndPassword,signInWithEmailAndPassword,updateProfile  } from "firebase/auth";
 
@@ -35,9 +35,11 @@ const Login = () => {
                 .then((userCredential) => {
                     // Signed in 
                     const user = userCredential.user;
-                    navigate("/browse")
                     
-                //    console.log(user);
+                    
+                    
+                   console.log(user);
+                //    navigate("/browse");
                 })
                 .catch((error) => {
                     const errorCode = error.code;
@@ -55,12 +57,13 @@ const Login = () => {
                     // Signed up 
                     const user = userCredential.user;
                     updateProfile(user, {
-                        displayName: name.current.value, photoURL: "https://uxwing.com/wp-content/themes/uxwing/download/peoples-avatars/corporate-user-icon.png"
+                        displayName: name.current.value, 
+                        photoURL: PHOTO_URL
                       }).then(() => {
                         const {uid,email,displayName,photoURL} = auth.currentUser;
                         dispatch(addUser({uid:uid,email:email,displayName:displayName,photoURL:photoURL}))
 
-                        navigate("/browse");
+                        // navigate("/browse");
                         // Profile updated!
                         // ...
                       }).catch((error) => {
