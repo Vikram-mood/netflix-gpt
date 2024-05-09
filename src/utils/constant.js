@@ -5,11 +5,11 @@ export const PHOTO_URL="https://uxwing.com/wp-content/themes/uxwing/download/peo
 
 
 export const API_OPTIONS= {
-    method: 'GET',
-    headers: {
-      accept: 'application/json',
-      Authorization: 'Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJlNDU1MzI3NDgwMDA5NTRmNWU2OTg1NzgwMjNmMGM3MCIsInN1YiI6IjY2MzljYTBjOTU5MGUzMDEyOWJkZmY2YyIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.HFX7kKhBCiNQAqHQKXutFNReB7U98v8C-DrJaEpXvJk'
-    }
+  method: 'GET',
+  headers: {
+    accept: 'application/json',
+    Authorization: 'Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI0NTAyODdhMDI4Y2NlNWFkYjE2OGNjOTk0YjYyOWMwOCIsInN1YiI6IjY2MzljYTBjOTU5MGUzMDEyOWJkZmY2YyIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.AzQ6rXiP5vIGwR1qyWw1xQL7XOYWsytzJvRMLXS6XRc'
+  }
   };
   
   export const VIDEOS_API_KEY="450287a028cce5adb168cc994b629c08";
@@ -22,3 +22,4 @@ export const API_OPTIONS= {
   export const UpComing_API_URL="https://api.themoviedb.org/3/movie/upcoming?api_key="+VIDEOS_API_KEY;
 
   export const SUPPORT_LANGUAGES=[{identifier:'en',name:'English'},{identifier:'hindi',name:'Hindi'},{identifier:"spanish",name:"Spanish"}]
+  
