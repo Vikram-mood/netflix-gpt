@@ -20,3 +20,5 @@ export const API_OPTIONS= {
   export const POPULAR_API_URL="https://api.themoviedb.org/3/movie/popular?api_key="+VIDEOS_API_KEY;
   export const TopRated_API_URL="https://api.themoviedb.org/3/movie/top_rated?api_key="+VIDEOS_API_KEY;
   export const UpComing_API_URL="https://api.themoviedb.org/3/movie/upcoming?api_key="+VIDEOS_API_KEY;
+
+  export const SUPPORT_LANGUAGES=[{identifier:'en',name:'English'},{identifier:'hindi',name:'Hindi'},{identifier:"spanish",name:"Spanish"}]
