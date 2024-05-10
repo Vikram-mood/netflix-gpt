@@ -8,7 +8,7 @@ import {useSelector} from "react-redux";
 
     return (
         <div className='bg-black'>
-        <div  className='-mt-44  relative z-20'>
+        <div  className='mt-0 md:-mt-44  relative z-20'>
             <MoviesList title={"Now Playing"} movies={movies.NowPlayingMovies}/>
             <MoviesList title={"Trending"} movies={movies.PopularMovies}/>
             <MoviesList title={"Top Rated"} movies={movies.TopRatedMovies}/>

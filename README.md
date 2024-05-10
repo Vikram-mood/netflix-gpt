@@ -16,6 +16,14 @@
 - Gpt Search page
 - Gpt search bar
 - Multi lang support for Gpt search page
+- Get Gemini AI Api key
+- Gpt search API call
+- fetched gprMoviesSuggestions from TMDb
+- created gptSlice added data
+- Reused MoviesList component to make movie suggestion container
+- Memorization
+- added .env file
+- Made website responsive
 
 
 

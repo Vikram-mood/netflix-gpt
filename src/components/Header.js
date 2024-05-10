@@ -61,10 +61,10 @@ const Header = () => {
       dispatch(changeLanguage(e.target.value))
     }
     return (
-        <div className=' absolute w-screen px-2 py-2 bg-gradient-to-b from-black z-10 flex justify-between'>
-            <img className='w-44 '  src={LOGO} alt="logo"/>
+        <div className=' absolute w-screen px-2 py-2 bg-gradient-to-b from-black z-10 flex flex-col justify-between md:flex-row '>
+            <img className='w-44 mx-auto md:mx-0'  src={LOGO} alt="logo"/>
             {user && 
-            <div className='flex p-2 m-2'>
+            <div className='flex p-2 m-2 justify-between'>
             {showGptsearchView&&
             <select className='p-2 m-2 bg-gray-900 text-white' onChange={handleLanguage}>
             {SUPPORT_LANGUAGES.map((lang)=><option key={lang.identifier} value={lang.identifier}>{lang.name}</option>)}
@@ -75,7 +75,7 @@ const Header = () => {
             onClick={handleGptSearchClick}>
             {!showGptsearchView? 'Gpt Search':'Homepage'}
             </button>
-                <img className='w-8 h-8'
+                <img className='w-8 h-8 hidden md:block'
                  src={user?.photoURL} 
                  alt="user-icon"></img>
                 <button className='text-white' onClick={handleSignOut}>Sign Out</button>

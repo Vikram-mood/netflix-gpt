@@ -92,9 +92,9 @@ const Login = () => {
         <div >
             <Header />
             <div className='absolute '>
-                <img src={BACKGROUND_IMG} alt='bg-img' />
+                <img src={BACKGROUND_IMG} alt='bg-img' className='h-screen object-cover md:w-screen'/>
             </div>
-            <form onSubmit={(e) => { e.preventDefault() }} className='absolute bg-black  p-12 w-4/12 mx-auto my-32 right-0 left-0 text-white rounded-lg bg-opacity-75'>
+            <form onSubmit={(e) => { e.preventDefault() }} className='absolute bg-black  p-12 w-screen md:w-4/12 mx-auto my-32 right-0 left-0 text-white rounded-lg bg-opacity-75'>
                 <h1 className='p-2 m-2'>{isSignInForm ? 'Sign In' : 'Sign Up'}</h1>
                 {!isSignInForm && <input ref={name} type='text' placeholder='Fullname' className='p-2 m-2 w-full bg-gray-600 rounded-lg' ></input>}
 
