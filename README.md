@@ -1,4 +1,4 @@
-
+Demo:https://netflixgpt-76686.web.app/
 - Create movies slice
 - update store with movies data
 - planing for main container and secondary container
