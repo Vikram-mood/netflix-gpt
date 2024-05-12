@@ -8,6 +8,7 @@ import useTopRatedMovies from '../hooks/useTopRatedMovies';
 import useUpComingMovies from '../hooks/useUpComingMovies';
 import GptSearch from './GptSearch';
 import {useSelector} from "react-redux"
+import { Outlet } from 'react-router-dom';
 
 const Browse = () => {
 
@@ -20,11 +21,13 @@ const Browse = () => {
 
     return (
         <div>
+            
             <Header />
             {showGptsearchView? <GptSearch /> :
             <> 
             <MainContainer />
             <SecondayContainer />
+           
             </>}
             
            

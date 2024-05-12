@@ -7,18 +7,29 @@ import { auth } from '../utils/firebase';
 import {  onAuthStateChanged } from "firebase/auth";
 
 import { addUser, removeUser } from '../utils/userSlice';
+import  VideoPlaying  from './VideoPlaying';
 const Body = () => {
 
    
 const appRoute=createBrowserRouter([
     {
         path:"/",
-        element:<Login />
+        element:<Login />,
+          
     },
     {
         path:"/browse",
-        element:<Browse />
+        element:<Browse />,   
+       
+    },
+    {
+        path:'/watch',
+        element:<VideoPlaying />
     }
+    
+    
+    
+    
 ])
 
 

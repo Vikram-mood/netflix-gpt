@@ -1,4 +1,11 @@
+<<<<<<< HEAD
 Demo:https://netflixgpt-76686.web.app/
+=======
+
+Demo: https://netflixgpt-76686.web.app/
+
+
+>>>>>>> cc4081f (VideoPlaying component for playing video trailer)
 - Create movies slice
 - update store with movies data
 - planing for main container and secondary container
