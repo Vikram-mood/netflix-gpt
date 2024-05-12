@@ -10,7 +10,7 @@
 
 # production
 /build
-
+README.md.orig
 .env
 # misc
 .DS_Store
