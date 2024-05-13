@@ -17,6 +17,7 @@ const Header = () => {
     const {showGptsearchView}=useSelector(store=>store.gpt);
     
     
+    
    
     const handleSignOut=()=>{
         signOut(auth).then(() => {
@@ -29,7 +30,7 @@ const Header = () => {
     useEffect(()=>{
         const unsubscribe=onAuthStateChanged(auth, (user) => {
             
-            
+         
             
             if (user) {
               // User is signed in, see docs for a list of available properties
@@ -48,6 +49,11 @@ const Header = () => {
               // ...
             }
           });
+
+          
+          
+          
+        
 
           return unsubscribe;
     
