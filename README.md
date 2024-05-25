@@ -1,5 +1,5 @@
 
-Demo: https://netflixgpt-76686.web.app/
+Demo: https://netflix-gpt-ivory-gamma.vercel.app/
 
 
 
